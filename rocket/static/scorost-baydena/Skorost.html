@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="Scor.css">
+        <link rel="icon" href="Skorost.ico">
+        <video width="320" height="340" controls autoplay muted loop>
+            <source src="BaydenBottum.mp4" type="video/mp4"/><!-- Звук падающих кеглей-->
+        </video>
+            <title>Вычисление скорости Байдена</title>
+    </head>
+    <body>
+        <h1>Вычисление скорости Байдена = <span id="avgs"></span> км/мин.</h1>
+        <h4>Длина дистанции </h4>
+    <form>        
+        <input
+        type="number"
+        id="distance"
+    >
+    </form>
+        <h4>Время на трассе </h4>
+    <form>
+        <input
+        type="number"
+        Id="time"
+    >
+    </form>
+    <form>
+     <!--Стилизованая кнопочка "Вычислить"-->
+        <input
+        type="button"
+        class="button"
+        value="Вычслить"
+        onclick="save()"
+        >
+    </form>
+        <hr color=#808000> <!--Цветная линия перед таблицей-->
+            <table id="record" border="3px">
+                <tr>
+                    <th>Время старта</th>
+                    <th>Длина дистанции</th>
+                    <th>Время в пути</th>
+                </tr>
+            </table>
+        <script src="Skorost.js"></script>
+    </body>  
+</html>
