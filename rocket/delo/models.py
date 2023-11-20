@@ -7,7 +7,7 @@ from django.utils import timezone
 
 class Delo(models.Model): # Создаём новый класс, который будет служить для блога моделью, указывая все необходимые элементы.
     title = models.CharField(max_length=100)
-    content = models. TextFild()
+    content = models. TextField()
     date_created = models.DateTimeField(default=timezone.now)
 
     def __str__(self): # С помощью функции меняем то, как будет представлена запись в модели.
