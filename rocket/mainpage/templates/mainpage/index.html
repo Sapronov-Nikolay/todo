@@ -1,0 +1,21 @@
+
+{% load static %}
+<link rel="shortcut icon" type="image/png" href="{% static 'img/free-icon-folder-7407897.png' %}"/>
+<link href="{% static 'style/layout.css' %}" rel="stylesheet">
+<link href="{% static 'style/krasota.css' %}" rel="stylesheet">
+<header>
+    <h1>Заголовок экстраординарного сайта</h1>
+</header>
+<body>
+    <h5>1. - Будем создавать страничку с выводом описания дел и списком</h5>
+    <h5>2. - Создадим страничку для отображения РЕКУРРЕНТНЫХ дел.</h5>
+    <h7><br> ------- Чем будет отличаться таблица рекуррентных дел?</br></h7>
+    <h7> <br>------- Какие поля понадобятся? Какие лишние?<</h7>
+    <h7> ------- Как хранить выполнение рекуррентного дела?</h7>
+    <h5>3. - Создать страничку для важных дат ваших друзей и знакомых.</h5>
+
+
+</body>
+
+<footer> {% now "Y" %} © Вася, крутой разработчик </footer>
+{% block content %}{% endblock %}
