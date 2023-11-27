@@ -1,0 +1,11 @@
+form {
+    display: flex;
+    flex-direction: column;
+	width: 310px;
+	border-radius: 10px;
+	border-width: 2px;
+	border-color: grey;
+	box-shadow: 7px 7px 2px 1px grey;
+	background-color: rgb(200, 200, 200);
+	padding: 20px;
+}
