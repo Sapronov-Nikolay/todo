@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>TASKLIST</title>
-
-    </head>
-</html>
-<body>
-    <h1>ШАБЛОНИЩЕ</h1>
-
-    <table id="vegetables" border="1" width="30%" align="center">
-        <caption><p>Список покупок</p></caption>
-
-        <tr>
-            <th>№</th>
-            <th>Товар</th>
-            <th>Кол-во в кг.</th>
-            <th>Цена МРЦ</th>
-            <th>Сумма в руб.</th>
-        </tr>
-    </table>
-</body>
+		{% load static %}
+	    <meta charset="utf-8" >
+	    <script src="{% static 'script/save_tasks.js' %}"></script>
+		<link rel="stylesheet" href="{% static 'style/forms.css' %}">
+	</head>
+	<body>
+	    <form action="javascript:;" onsubmit="create_task(this)">
+		    <div><label for="start">Время постановки задачи</label>
+			<input type="date" name="start"   value="2023-11-22" id="start"></div>
+			<div><label for="end">Срок выполнения</label>
+			<input type="date" name="end"   value="2023-11-23" id="end">
+			</div>
+		    <div><label for="description">Задача</label><input type="text" name="description" id="description" value="имя" />
+			<label for="done">Готово</label>
+			<input type="checkbox" name="done" id="done"></div>
+			<input type="submit" value="Поставить задачу">
+		</form>
+	</body>
+<html>
