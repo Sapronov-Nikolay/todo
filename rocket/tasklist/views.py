@@ -9,3 +9,12 @@ def index(request):
         } # Kонтекст передаваемых переменных
 
     )
+
+def add_task(request):
+    if request.method == 'POST':
+        print(request.POST)
+    return render(            
+        request,         
+        'tasklist/form.html',
+        {}
+    )
