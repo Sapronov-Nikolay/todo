@@ -23,7 +23,7 @@ from django.urls import path, include
 urlpatterns = [
 	path('' , views.index),
     path('admin/', admin.site.urls),
-    path('tasklist/', include('tasklist.urls')), 
+    path('tasklist/', include('tasklist.urls')),
 ]
 
 navset = [
