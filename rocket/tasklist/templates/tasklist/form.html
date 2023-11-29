@@ -1,7 +1,9 @@
 {% load static %}
+<link rel="stylesheet" href="{% static 'style/forms.css' %}">
 <link rel="shortcut icon" type="image/png" href="{% static 'img/free-icon-folder-7407897.png' %}"/>
 <form action='/tasklist/add' method="post">
     {% csrf_token %}
     <input name='data' type='text' value='Данные'>
+    {{task_form_auto_gen}}
     <input type="submit" value="Ok">
     </form>

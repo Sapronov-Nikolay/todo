@@ -4,8 +4,12 @@ form {
 	width: 310px;
 	border-radius: 10px;
 	border-width: 2px;
-	border-color: grey;
-	box-shadow: 7px 7px 2px 1px grey;
-	background-color: rgb(200, 200, 200);
+	border-color: rgb(167, 238, 34);
+	box-shadow: 7px 7px 2px 1px rgba(125, 172, 16, 0.945);
+	background-color: rgb(217, 253, 119);
 	padding: 20px;
+}
+
+body {
+    background-color: #dbff98;
 }
